@@ -1,0 +1,147 @@
+/* Reset default margin and padding */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container styles */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product image styles */
+.product-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Product details styles */
+.product-details {
+  margin-bottom: 20px;
+}
+
+.product-details h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-details .category {
+  font-size: 16px;
+  color: #555;
+}
+
+.product-details .price {
+  font-size: 20px;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.product-details .old-price {
+  font-size: 16px;
+  color: #ccc;
+  text-decoration: line-through;
+  margin-top: 5px;
+}
+
+.product-details .rating {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.product-details .stars {
+  color: #ffcc00;
+  font-size: 24px;
+}
+
+/* Add to cart button styles */
+.add-to-cart {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+.back-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 50px;
+}
+
+.back-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.images {
+  width: 256px;
+  height: 256px;
+  margin-right: 50px;
+  box-shadow: -1px 11px 67px 15px rgba(34, 60, 80, 0.2);
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.item-detils {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-detail {
+  width: 150px;
+  padding-left: 10px;
+  height: 30px;
+}
+
+.price {
+  margin-top: 40px;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Boshlang'ich holatda yopilgan */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.btn-detail {
+  padding-bottom: 10px;
+}
